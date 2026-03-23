@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bioengineer-webapp
+    env: node
+    buildCommand: npm run render-build
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /api/modules
